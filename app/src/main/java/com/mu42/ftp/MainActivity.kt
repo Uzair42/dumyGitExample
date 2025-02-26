@@ -12,7 +12,7 @@ import com.mu42.ftp.R
 class MainActivity : AppCompatActivity() {
     private lateinit var btnToggle: Button
     //its comment in the project//
-    //
+
     private lateinit var tvStatus: TextView
     private lateinit var tvIpPort: TextView
     private lateinit var tvLog: TextView
@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+    // startServer Code which is dummy code
     private fun startServer() {
         val serviceIntent = Intent(this, FtpServerService::class.java)
         startService(serviceIntent)
